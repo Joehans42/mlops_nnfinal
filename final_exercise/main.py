@@ -1,11 +1,10 @@
 import argparse
 import sys
 
-import torch
 import click
-import torch.optim as optim
 import matplotlib.pyplot as plt
-
+import torch
+import torch.optim as optim
 from data import corruptData
 from model import MyShittyModel
 
