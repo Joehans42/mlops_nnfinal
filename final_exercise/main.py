@@ -1,6 +1,7 @@
 import argparse
 import sys
 
+import wandb
 import click
 import matplotlib.pyplot as plt
 import torch
@@ -8,6 +9,12 @@ import torch.optim as optim
 from data import corruptData
 from model import MyShittyModel
 
+wandb.init(project="test-project", entity="grp3")
+wandb.config = {
+  "learning_rate": 0.0001,
+  "epochs": 15,
+  "batch_size": 64
+}
 
 @click.group()
 def cli():
@@ -29,6 +36,7 @@ def train(lr):
 
     epochs = 15
 
+    wandb.watch(model, log_freq=100)
     for e in range(epochs):
         losses = []
         for images, labels in trainloader:
@@ -38,6 +46,7 @@ def train(lr):
             loss.backward()
             optimizer.step()
 
+            wandb.log({'loss': loss})
             losses.append(loss.item())
         print(f'Epoch: {e+1}/{epochs}, Loss: {loss}')
     torch.save(model.state_dict(), 'model_chkpt.pt')
@@ -63,13 +72,22 @@ def evaluate(model_checkpoint):
     total_correct = 0
     total = 0
 
+    columns = ['image', 'guess', 'truth']
+    my_table = wandb.Table(columns=columns)
+
     for image, label in testloader:
         ps = model(image)
         ps = ps.argmax(dim=-1)
 
+        ## wandb table
+        for i in range(len(label)):
+            my_table.add_data(wandb.Image(image[i]), ps[i], label[i])
+
         num_correct = torch.sum(ps == label)
         total_correct += num_correct
         total += len(label)
+    
+    wandb.log({'table':my_table})
     
     print(f'Test accuracy: {total_correct/total*100}%')
 

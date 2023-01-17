@@ -1,0 +1,54 @@
+Evaluating until hitting the ceiling
+model_chkpt.pt
+Traceback (most recent call last):
+  File "/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/main.py", line 98, in <module>
+    cli()
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/main.py", line 89, in evaluate
+    wandb.log({'table':my_table})
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 333, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1703, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1485, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1364, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 568, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/data_types/utils.py", line 52, in history_dict_to_json
+    payload[key] = val_to_json(
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/sdk/data_types/utils.py", line 160, in val_to_json
+    val.bind_to_run(run, key, namespace)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/data_types.py", line 528, in bind_to_run
+    util.json_dump_safer(data, fp)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/wandb/util.py", line 936, in json_dump_safer
+    return json.dump(obj, fp, cls=WandBJSONEncoder, **kwargs)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/encoder.py", line 439, in _iterencode
+    yield from _iterencode(o, _current_indent_level)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/encoder.py", line 439, in _iterencode
+    yield from _iterencode(o, _current_indent_level)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/json/encoder.py", line 436, in _iterencode
+    raise ValueError("Circular reference detected")
+ValueError: Circular reference detected

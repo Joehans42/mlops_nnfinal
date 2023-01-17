@@ -1,0 +1,265 @@
+2023-01-17 17:55:34,011 INFO    StreamThr :9590 [internal.py:wandb_internal():87] W&B internal server running at pid: 9590, started at: 2023-01-17 17:55:34.011009
+2023-01-17 17:55:34,016 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: status
+2023-01-17 17:55:34,018 INFO    WriterThread:9590 [datastore.py:open_for_write():85] open: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/run-xoc27edi.wandb
+2023-01-17 17:55:34,019 DEBUG   SenderThread:9590 [sender.py:send():334] send: header
+2023-01-17 17:55:34,023 DEBUG   SenderThread:9590 [sender.py:send():334] send: run
+2023-01-17 17:55:34,850 INFO    SenderThread:9590 [dir_watcher.py:__init__():216] watching files in: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files
+2023-01-17 17:55:34,851 INFO    SenderThread:9590 [sender.py:_start_run_threads():1065] run started: xoc27edi with start time 1673974534.010262
+2023-01-17 17:55:34,851 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: summary_record
+2023-01-17 17:55:34,851 INFO    SenderThread:9590 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-17 17:55:34,852 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: check_version
+2023-01-17 17:55:34,852 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: check_version
+2023-01-17 17:55:34,952 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: run_start
+2023-01-17 17:55:34,954 DEBUG   HandlerThread:9590 [system_info.py:__init__():31] System info init
+2023-01-17 17:55:34,954 DEBUG   HandlerThread:9590 [system_info.py:__init__():46] System info init done
+2023-01-17 17:55:34,954 INFO    HandlerThread:9590 [system_monitor.py:start():151] Starting system monitor
+2023-01-17 17:55:34,955 INFO    SystemMonitor:9590 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-17 17:55:34,955 INFO    HandlerThread:9590 [system_monitor.py:probe():172] Collecting system info
+2023-01-17 17:55:34,956 INFO    SystemMonitor:9590 [interfaces.py:start():168] Started cpu
+2023-01-17 17:55:34,957 INFO    SystemMonitor:9590 [interfaces.py:start():168] Started disk
+2023-01-17 17:55:34,958 INFO    SystemMonitor:9590 [interfaces.py:start():168] Started memory
+2023-01-17 17:55:34,959 INFO    SystemMonitor:9590 [interfaces.py:start():168] Started network
+2023-01-17 17:55:34,984 DEBUG   HandlerThread:9590 [system_info.py:probe():195] Probing system
+2023-01-17 17:55:34,987 DEBUG   HandlerThread:9590 [system_info.py:_probe_git():180] Probing git
+2023-01-17 17:55:34,998 DEBUG   HandlerThread:9590 [system_info.py:_probe_git():188] Probing git done
+2023-01-17 17:55:34,998 DEBUG   HandlerThread:9590 [system_info.py:probe():241] Probing system done
+2023-01-17 17:55:34,998 DEBUG   HandlerThread:9590 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-58-generic-x86_64-with-glibc2.31', 'python': '3.10.8', 'heartbeatAt': '2023-01-17T16:55:34.984482', 'startedAt': '2023-01-17T16:55:33.997965', 'docker': None, 'cuda': None, 'args': ('evaluate', 'model_chkpt.pt'), 'state': 'running', 'program': '/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/main.py', 'codePath': 'final_exercise/main.py', 'git': {'remote': 'https://github.com/Joehans42/mlops_nnfinal.git', 'commit': '9018c0eb68631504c33dd06f76bee670c91e8ed3'}, 'email': 's164397@student.dtu.dk', 'root': '/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal', 'host': 'johslaptop', 'username': 'johannes', 'executable': '/home/johannes/anaconda3/envs/mlops_venv/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 6, 'cpu_freq': {'current': 1.3995, 'min': 1400.0, 'max': 2375.0}, 'cpu_freq_per_core': [{'current': 1.397, 'min': 1400.0, 'max': 2375.0}, {'current': 1.4, 'min': 1400.0, 'max': 2375.0}, {'current': 1.4, 'min': 1400.0, 'max': 2375.0}, {'current': 1.4, 'min': 1400.0, 'max': 2375.0}, {'current': 1.4, 'min': 1400.0, 'max': 2375.0}, {'current': 1.4, 'min': 1400.0, 'max': 2375.0}], 'disk': {'total': 937.3305015563965, 'used': 171.67710494995117}, 'memory': {'total': 14.99643325805664}}
+2023-01-17 17:55:34,998 INFO    HandlerThread:9590 [system_monitor.py:probe():182] Finished collecting system info
+2023-01-17 17:55:34,998 INFO    HandlerThread:9590 [system_monitor.py:probe():185] Publishing system info
+2023-01-17 17:55:34,998 DEBUG   HandlerThread:9590 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-17 17:55:34,999 DEBUG   HandlerThread:9590 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-17 17:55:34,999 DEBUG   HandlerThread:9590 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-17 17:55:35,854 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_created():275] file/dir created: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/requirements.txt
+2023-01-17 17:55:35,855 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_created():275] file/dir created: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/conda-environment.yaml
+2023-01-17 17:55:35,855 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_created():275] file/dir created: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/wandb-summary.json
+2023-01-17 17:55:39,853 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/conda-environment.yaml
+2023-01-17 17:55:39,868 DEBUG   HandlerThread:9590 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-17 17:55:39,869 INFO    HandlerThread:9590 [system_monitor.py:probe():187] Finished publishing system info
+2023-01-17 17:55:39,877 DEBUG   SenderThread:9590 [sender.py:send():334] send: files
+2023-01-17 17:55:39,877 INFO    SenderThread:9590 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-01-17 17:55:39,878 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: status_report
+2023-01-17 17:55:39,887 DEBUG   SenderThread:9590 [sender.py:send():334] send: telemetry
+2023-01-17 17:55:39,936 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: stop_status
+2023-01-17 17:55:39,936 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: stop_status
+2023-01-17 17:55:40,266 DEBUG   SenderThread:9590 [sender.py:send():334] send: telemetry
+2023-01-17 17:55:40,674 INFO    Thread-16 :9590 [upload_job.py:push():143] Uploaded file /tmp/tmpb1f_yxd2wandb/ca6dgplp-wandb-metadata.json
+2023-01-17 17:55:40,853 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_created():275] file/dir created: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/wandb-metadata.json
+2023-01-17 17:55:40,853 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_created():275] file/dir created: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/output.log
+2023-01-17 17:55:41,089 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: log_artifact
+2023-01-17 17:55:41,089 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: log_artifact
+2023-01-17 17:55:42,114 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-17 17:55:42,854 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/output.log
+2023-01-17 17:55:44,320 INFO    Thread-79 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp174hs_et
+2023-01-17 17:55:44,336 INFO    Thread-37 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp4rvh1e83
+2023-01-17 17:55:44,361 INFO    Thread-22 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpcznhn163
+2023-01-17 17:55:44,361 INFO    Thread-35 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpe5gem8zi
+2023-01-17 17:55:44,369 INFO    Thread-75 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpgg88k33g
+2023-01-17 17:55:44,372 INFO    Thread-66 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmphwep5wyw
+2023-01-17 17:55:44,380 INFO    Thread-54 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpr1p1o45d
+2023-01-17 17:55:44,387 INFO    Thread-59 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp40i4sl4m
+2023-01-17 17:55:44,436 INFO    Thread-27 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp1mqju8mw
+2023-01-17 17:55:44,437 INFO    Thread-26 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp_y3da6h1
+2023-01-17 17:55:44,439 INFO    Thread-62 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpqu0ig4hz
+2023-01-17 17:55:44,441 INFO    Thread-76 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpph1rl99y
+2023-01-17 17:55:44,442 INFO    Thread-25 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp3w89nl0p
+2023-01-17 17:55:44,442 INFO    Thread-80 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpf4t7o_cn
+2023-01-17 17:55:44,443 INFO    Thread-31 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp7b_eqg11
+2023-01-17 17:55:44,474 INFO    Thread-78 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp_xpii725
+2023-01-17 17:55:44,475 INFO    Thread-50 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpk3wbrrvu
+2023-01-17 17:55:44,475 INFO    Thread-28 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpfa7qdmzs
+2023-01-17 17:55:44,476 INFO    Thread-47 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpaoz_bqph
+2023-01-17 17:55:44,476 INFO    Thread-52 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpga3a1upa
+2023-01-17 17:55:44,476 INFO    Thread-33 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp01gel6nx
+2023-01-17 17:55:44,489 INFO    Thread-44 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp551cynp7
+2023-01-17 17:55:44,499 INFO    Thread-48 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpafkcbmg7
+2023-01-17 17:55:44,499 INFO    Thread-65 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpcyf07mkd
+2023-01-17 17:55:44,527 INFO    Thread-70 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpipny1xu_
+2023-01-17 17:55:44,530 INFO    Thread-67 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpacy619_h
+2023-01-17 17:55:44,536 INFO    Thread-61 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpxkxbtrij
+2023-01-17 17:55:44,564 INFO    Thread-32 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpq0d6rt3c
+2023-01-17 17:55:44,595 INFO    Thread-58 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpwfe7mdyw
+2023-01-17 17:55:44,615 INFO    Thread-73 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpt_uxavtx
+2023-01-17 17:55:44,660 INFO    Thread-56 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpml1693q1
+2023-01-17 17:55:44,665 INFO    Thread-39 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpn0r7yxj7
+2023-01-17 17:55:44,665 INFO    Thread-42 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpr6vzq5tn
+2023-01-17 17:55:44,666 INFO    Thread-74 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp_nx5geo_
+2023-01-17 17:55:44,667 INFO    Thread-51 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpf5d8dtpc
+2023-01-17 17:55:44,667 INFO    Thread-20 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpupdwkk8a
+2023-01-17 17:55:44,668 INFO    Thread-68 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpx14bxect
+2023-01-17 17:55:44,669 INFO    Thread-55 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpqcz96d3b
+2023-01-17 17:55:44,669 INFO    Thread-21 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp83h46ung
+2023-01-17 17:55:44,670 INFO    Thread-24 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp4ze_iom0
+2023-01-17 17:55:44,670 INFO    Thread-71 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpa0x42ns0
+2023-01-17 17:55:44,670 INFO    Thread-43 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpraby320s
+2023-01-17 17:55:44,671 INFO    Thread-34 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp1_78yr03
+2023-01-17 17:55:44,671 INFO    Thread-30 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp0gn876pf
+2023-01-17 17:55:44,671 INFO    Thread-36 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpn7ghxtpo
+2023-01-17 17:55:44,672 INFO    Thread-29 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp75153x33
+2023-01-17 17:55:44,672 INFO    Thread-53 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpbpbof9s6
+2023-01-17 17:55:44,673 INFO    Thread-72 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpg7ye6zc0
+2023-01-17 17:55:44,674 INFO    Thread-63 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmptbja2btd
+2023-01-17 17:55:44,674 INFO    Thread-60 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpyh5lgkz7
+2023-01-17 17:55:44,675 INFO    Thread-64 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmptg35jg39
+2023-01-17 17:55:44,675 INFO    Thread-49 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpbrkif47p
+2023-01-17 17:55:44,675 INFO    Thread-46 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp3yr3f6bb
+2023-01-17 17:55:44,675 INFO    Thread-38 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpfqcd8kxu
+2023-01-17 17:55:44,676 INFO    Thread-41 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpuuqbyktw
+2023-01-17 17:55:44,676 INFO    Thread-23 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpaa_7kucu
+2023-01-17 17:55:44,676 INFO    Thread-40 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpdja9b9hd
+2023-01-17 17:55:44,677 INFO    Thread-18 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpd0hb1ytu
+2023-01-17 17:55:44,677 INFO    Thread-57 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpq7u_r_hi
+2023-01-17 17:55:44,677 INFO    Thread-45 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp01ilnpot
+2023-01-17 17:55:44,677 INFO    Thread-19 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpo9_hplt8
+2023-01-17 17:55:44,678 INFO    Thread-81 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpbr1d2sfs
+2023-01-17 17:55:44,678 INFO    Thread-77 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpjudd_zwo
+2023-01-17 17:55:44,722 INFO    Thread-69 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpdcmbgnnc
+2023-01-17 17:55:45,178 INFO    Thread-82 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpn3e9glii
+2023-01-17 17:55:45,557 INFO    Thread-91 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpcntyo6xi
+2023-01-17 17:55:45,557 INFO    Thread-89 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmplo7nqawd
+2023-01-17 17:55:45,588 INFO    Thread-85 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpdyqenbmg
+2023-01-17 17:55:45,589 INFO    Thread-94 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmparrlz4yt
+2023-01-17 17:55:45,591 INFO    Thread-84 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpk1di5cl1
+2023-01-17 17:55:45,592 INFO    Thread-87 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpgqt8b1j0
+2023-01-17 17:55:45,592 INFO    Thread-95 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmppkj7dthh
+2023-01-17 17:55:45,592 INFO    Thread-83 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp7rslooo4
+2023-01-17 17:55:45,594 INFO    Thread-90 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmprpmokier
+2023-01-17 17:55:45,600 INFO    Thread-86 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpqrxo8_it
+2023-01-17 17:55:45,607 INFO    Thread-92 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmppa3s0wlr
+2023-01-17 17:55:45,620 INFO    Thread-93 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpw83xgmyz
+2023-01-17 17:55:45,626 INFO    Thread-97 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmpr5xvd671
+2023-01-17 17:55:45,627 INFO    Thread-88 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp1gidh_cp
+2023-01-17 17:55:45,636 INFO    Thread-96 :9590 [upload_job.py:push():101] Uploaded file /home/johannes/.local/share/wandb/artifacts/staging/tmp7wftch5e
+2023-01-17 17:55:46,606 INFO    SenderThread:9590 [sender.py:send_request_log_artifact():1379] logged artifact run-xoc27edi-table - {'id': 'QXJ0aWZhY3Q6MzI5ODU3MTQ5', 'digest': 'cbbebbefd4fd0a89440c96940022ec3d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODU0NjE4', 'latestArtifact': None}, 'version': 'latest'}
+2023-01-17 17:55:46,607 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: status_report
+2023-01-17 17:55:46,610 DEBUG   SenderThread:9590 [sender.py:send():334] send: exit
+2023-01-17 17:55:46,610 INFO    SenderThread:9590 [sender.py:send_exit():557] handling exit code: 1
+2023-01-17 17:55:46,610 INFO    SenderThread:9590 [sender.py:send_exit():559] handling runtime: 6
+2023-01-17 17:55:46,613 INFO    SenderThread:9590 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-17 17:55:46,613 INFO    SenderThread:9590 [sender.py:send_exit():565] send defer
+2023-01-17 17:55:46,613 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: poll_exit
+2023-01-17 17:55:46,614 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,614 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 0
+2023-01-17 17:55:46,614 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,615 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-01-17 17:55:46,615 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 1
+2023-01-17 17:55:46,615 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,615 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 1
+2023-01-17 17:55:46,615 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,615 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-01-17 17:55:46,615 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 2
+2023-01-17 17:55:46,616 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,616 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 2
+2023-01-17 17:55:46,616 INFO    HandlerThread:9590 [system_monitor.py:finish():161] Stopping system monitor
+2023-01-17 17:55:46,616 DEBUG   SystemMonitor:9590 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-17 17:55:46,617 DEBUG   SystemMonitor:9590 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-17 17:55:46,617 DEBUG   SystemMonitor:9590 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-17 17:55:46,617 INFO    HandlerThread:9590 [interfaces.py:finish():175] Joined cpu
+2023-01-17 17:55:46,618 INFO    HandlerThread:9590 [interfaces.py:finish():175] Joined disk
+2023-01-17 17:55:46,618 INFO    HandlerThread:9590 [interfaces.py:finish():175] Joined memory
+2023-01-17 17:55:46,618 INFO    HandlerThread:9590 [interfaces.py:finish():175] Joined network
+2023-01-17 17:55:46,618 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,618 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-01-17 17:55:46,618 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 3
+2023-01-17 17:55:46,619 DEBUG   SenderThread:9590 [sender.py:send():334] send: stats
+2023-01-17 17:55:46,619 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,619 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 3
+2023-01-17 17:55:46,619 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,619 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-01-17 17:55:46,619 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 4
+2023-01-17 17:55:46,620 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,620 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 4
+2023-01-17 17:55:46,620 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,620 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-01-17 17:55:46,620 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 5
+2023-01-17 17:55:46,620 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,621 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 5
+2023-01-17 17:55:46,621 DEBUG   SenderThread:9590 [sender.py:send():334] send: summary
+2023-01-17 17:55:46,623 INFO    SenderThread:9590 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-17 17:55:46,624 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,624 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-01-17 17:55:46,624 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 6
+2023-01-17 17:55:46,624 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,624 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 6
+2023-01-17 17:55:46,625 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,625 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-01-17 17:55:46,630 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: status_report
+2023-01-17 17:55:46,840 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 7
+2023-01-17 17:55:46,841 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:46,841 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 7
+2023-01-17 17:55:46,842 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:46,842 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-01-17 17:55:46,910 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/config.yaml
+2023-01-17 17:55:46,910 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/wandb-summary.json
+2023-01-17 17:55:47,142 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-17 17:55:48,623 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 8
+2023-01-17 17:55:48,623 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:48,624 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 8
+2023-01-17 17:55:48,624 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:48,624 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-01-17 17:55:48,630 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 9
+2023-01-17 17:55:48,630 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:48,631 DEBUG   SenderThread:9590 [sender.py:send():334] send: artifact
+2023-01-17 17:55:48,631 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 9
+2023-01-17 17:55:48,911 INFO    Thread-13 :9590 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/output.log
+2023-01-17 17:55:51,863 INFO    SenderThread:9590 [sender.py:send_artifact():1415] sent artifact job-https___github.com_Joehans42_mlops_nnfinal.git_final_exercise_main.py - {'id': 'QXJ0aWZhY3Q6MzI5NzYzMjM1', 'digest': '803ab9b1b7b8c12233862754186e0bce', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_Joehans42_mlops_nnfinal.git_final_exercise_main.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODQ3Njkx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzI5NzcwNDcw', 'versionIndex': 1}}, 'version': 'v0'}
+2023-01-17 17:55:51,864 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:51,864 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-01-17 17:55:51,864 INFO    SenderThread:9590 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-17 17:55:51,864 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: status_report
+2023-01-17 17:55:51,913 INFO    SenderThread:9590 [dir_watcher.py:finish():392] scan: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files
+2023-01-17 17:55:51,913 INFO    SenderThread:9590 [dir_watcher.py:finish():406] scan save: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/requirements.txt requirements.txt
+2023-01-17 17:55:51,914 INFO    SenderThread:9590 [dir_watcher.py:finish():406] scan save: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/config.yaml config.yaml
+2023-01-17 17:55:51,914 INFO    SenderThread:9590 [dir_watcher.py:finish():406] scan save: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/wandb-metadata.json wandb-metadata.json
+2023-01-17 17:55:51,914 INFO    SenderThread:9590 [dir_watcher.py:finish():406] scan save: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/output.log output.log
+2023-01-17 17:55:51,923 INFO    SenderThread:9590 [dir_watcher.py:finish():406] scan save: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/conda-environment.yaml conda-environment.yaml
+2023-01-17 17:55:51,928 INFO    SenderThread:9590 [dir_watcher.py:finish():406] scan save: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/wandb-summary.json wandb-summary.json
+2023-01-17 17:55:51,928 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 10
+2023-01-17 17:55:51,936 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:51,936 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 10
+2023-01-17 17:55:51,937 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:51,937 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-01-17 17:55:51,937 INFO    SenderThread:9590 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-17 17:55:52,145 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-17 17:55:52,567 INFO    Thread-102:9590 [upload_job.py:push():143] Uploaded file /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/wandb-summary.json
+2023-01-17 17:55:52,585 INFO    Thread-100:9590 [upload_job.py:push():143] Uploaded file /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/output.log
+2023-01-17 17:55:52,614 INFO    Thread-101:9590 [upload_job.py:push():143] Uploaded file /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/conda-environment.yaml
+2023-01-17 17:55:52,656 INFO    Thread-98 :9590 [upload_job.py:push():143] Uploaded file /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/requirements.txt
+2023-01-17 17:55:52,893 INFO    Thread-99 :9590 [upload_job.py:push():143] Uploaded file /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/files/config.yaml
+2023-01-17 17:55:53,094 INFO    Thread-12 (_thread_body):9590 [sender.py:transition_state():585] send defer: 11
+2023-01-17 17:55:53,095 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:53,095 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 11
+2023-01-17 17:55:53,095 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:53,095 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-01-17 17:55:53,096 INFO    SenderThread:9590 [file_pusher.py:join():165] waiting for file pusher
+2023-01-17 17:55:53,096 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 12
+2023-01-17 17:55:53,096 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:53,096 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 12
+2023-01-17 17:55:53,096 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:53,097 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-01-17 17:55:53,283 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 13
+2023-01-17 17:55:53,283 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:53,284 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 13
+2023-01-17 17:55:53,284 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:53,284 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-01-17 17:55:53,285 INFO    SenderThread:9590 [sender.py:transition_state():585] send defer: 14
+2023-01-17 17:55:53,285 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: defer
+2023-01-17 17:55:53,285 INFO    HandlerThread:9590 [handler.py:handle_request_defer():170] handle defer: 14
+2023-01-17 17:55:53,286 DEBUG   SenderThread:9590 [sender.py:send():334] send: final
+2023-01-17 17:55:53,286 DEBUG   SenderThread:9590 [sender.py:send():334] send: footer
+2023-01-17 17:55:53,286 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: defer
+2023-01-17 17:55:53,286 INFO    SenderThread:9590 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-01-17 17:55:53,287 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-17 17:55:53,287 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: poll_exit
+2023-01-17 17:55:53,288 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: server_info
+2023-01-17 17:55:53,289 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: get_summary
+2023-01-17 17:55:53,289 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: sampled_history
+2023-01-17 17:55:53,290 DEBUG   SenderThread:9590 [sender.py:send_request():361] send_request: server_info
+2023-01-17 17:55:53,513 INFO    MainThread:9590 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-01-17 17:55:53,513 INFO    MainThread:9590 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-01-17 17:55:53,514 INFO    MainThread:9590 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-01-17 17:55:53,514 DEBUG   HandlerThread:9590 [handler.py:handle_request():144] handle_request: shutdown
+2023-01-17 17:55:53,514 INFO    HandlerThread:9590 [handler.py:finish():841] shutting down handler
+2023-01-17 17:55:54,290 INFO    WriterThread:9590 [datastore.py:close():299] close: /home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/wandb/run-20230117_175533-xoc27edi/run-xoc27edi.wandb
+2023-01-17 17:55:54,513 INFO    SenderThread:9590 [sender.py:finish():1491] shutting down sender
+2023-01-17 17:55:54,513 INFO    SenderThread:9590 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-17 17:55:54,514 INFO    SenderThread:9590 [file_pusher.py:join():165] waiting for file pusher

@@ -1,0 +1,71 @@
+{
+    "os": "Linux-5.15.0-58-generic-x86_64-with-glibc2.31",
+    "python": "3.10.8",
+    "heartbeatAt": "2023-01-17T15:41:16.248472",
+    "startedAt": "2023-01-17T15:41:15.052464",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "train",
+        "--lr",
+        "1e-4"
+    ],
+    "state": "running",
+    "program": "/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/main.py",
+    "codePath": "final_exercise/main.py",
+    "git": {
+        "remote": "https://github.com/Joehans42/mlops_nnfinal.git",
+        "commit": "9018c0eb68631504c33dd06f76bee670c91e8ed3"
+    },
+    "email": "s164397@student.dtu.dk",
+    "root": "/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal",
+    "host": "johslaptop",
+    "username": "johannes",
+    "executable": "/home/johannes/anaconda3/envs/mlops_venv/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 6,
+    "cpu_freq": {
+        "current": 1.5213333333333334,
+        "min": 1400.0,
+        "max": 2375.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1.4,
+            "min": 1400.0,
+            "max": 2375.0
+        },
+        {
+            "current": 1.4,
+            "min": 1400.0,
+            "max": 2375.0
+        },
+        {
+            "current": 1.642,
+            "min": 1400.0,
+            "max": 2375.0
+        },
+        {
+            "current": 1.7,
+            "min": 1400.0,
+            "max": 2375.0
+        },
+        {
+            "current": 1.7,
+            "min": 1400.0,
+            "max": 2375.0
+        },
+        {
+            "current": 1.4,
+            "min": 1400.0,
+            "max": 2375.0
+        }
+    ],
+    "disk": {
+        "total": 937.3305015563965,
+        "used": 171.67131423950195
+    },
+    "memory": {
+        "total": 14.99643325805664
+    }
+}

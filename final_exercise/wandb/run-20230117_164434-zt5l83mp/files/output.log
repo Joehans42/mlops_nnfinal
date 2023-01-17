@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/main.py", line 90, in <module>
+    cli()
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/main.py", line 32, in train
+    train_set = corruptData(train=True)
+  File "/home/johannes/Master/3_sem/02476_ML_Ops/s2/mlops_nnfinal/final_exercise/data.py", line 11, in __init__
+    train_list.append(np.load(f'../../data/corruptmnist/train_{i}.npz', allow_pickle=True))
+  File "/home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../../data/corruptmnist/train_0.npz'
+Training day and night
+0.0001
